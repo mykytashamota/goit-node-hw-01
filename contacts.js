@@ -47,11 +47,3 @@ export const updateById = async (id, data) => {
   fs.writeFile(contactsPath, JSON.stringify(contacts));
   return contacts[index];
 };
-
-// module.exports = {
-//   getAllContacts,
-//   getContactById,
-//   addContact,
-//   removeContact,
-//   updateById,
-// };
