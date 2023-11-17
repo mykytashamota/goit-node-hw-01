@@ -32,7 +32,7 @@ const invokeAction = async ({ action, id, name, email, phone }) => {
       return console.log(contactById);
 
     case "add":
-      const newContact = await addContact(name, email, phone);
+      const newContact = await addContact({ name, email, phone });
       return console.log(newContact);
 
     case "remove":
